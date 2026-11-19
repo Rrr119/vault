@@ -1,0 +1,17 @@
+{
+  "root": "/home/dev/feedback/uid26338",
+  "B": "/home/dev/feedback/uid26338",
+  "sha": "8967a9cd0d57b4c8d48e2b565bec3a4f569ad658",
+  "wslDistro": "Ubuntu-26.04",
+  "source": {
+    "owner": "hashicorp",
+    "repo": "vault",
+    "sha": "8967a9cd0d57b4c8d48e2b565bec3a4f569ad658"
+  },
+  "fork": {
+    "owner": "Rrr119",
+    "repo": "vault",
+    "cloneUrl": "https://github.com/Rrr119/vault.git"
+  },
+  "at": "2026-11-19T00:56:13.136Z"
+}

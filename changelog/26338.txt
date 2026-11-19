@@ -1,0 +1,3 @@
+```release-note:feature
+database: Add an explicit `dbplugin.Plugin` contract and an HTTP API reference plugin for integrating in-house databases with dynamic credentials.
+```

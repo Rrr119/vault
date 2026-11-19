@@ -369,6 +369,9 @@ hana-database-plugin:
 mongodb-database-plugin:
 	@CGO_ENABLED=0 $(GO_CMD) build -o bin/mongodb-database-plugin ./plugins/database/mongodb/mongodb-database-plugin
 
+example-database-plugin:
+	@CGO_ENABLED=0 $(GO_CMD) build -o bin/example-database-plugin ./plugins/database/example/example-database-plugin
+
 # These ci targets are used for used for building and testing in Github Actions
 # workflows and for Enos scenarios.
 .PHONY: ci-build
@@ -419,7 +422,7 @@ ci-copywriteheaders:
 	cd sdk && $(CURDIR)/scripts/copywrite-exceptions.sh
 	cd shamir && $(CURDIR)/scripts/copywrite-exceptions.sh
 
-.PHONY: all bin default prep test vet bootstrap fmt fmtcheck mysql-database-plugin mysql-legacy-database-plugin cassandra-database-plugin influxdb-database-plugin postgresql-database-plugin mssql-database-plugin hana-database-plugin mongodb-database-plugin ember-dist ember-dist-dev static-dist static-dist-dev assetcheck check-vault-in-path packages build build-ci semgrep semgrep-ci vet-codechecker ci-vet-codechecker dev
+.PHONY: all bin default prep test vet bootstrap fmt fmtcheck mysql-database-plugin mysql-legacy-database-plugin cassandra-database-plugin influxdb-database-plugin postgresql-database-plugin mssql-database-plugin hana-database-plugin mongodb-database-plugin example-database-plugin ember-dist ember-dist-dev static-dist static-dist-dev assetcheck check-vault-in-path packages build build-ci semgrep semgrep-ci vet-codechecker ci-vet-codechecker dev
 
 .NOTPARALLEL: ember-dist ember-dist-dev
 
